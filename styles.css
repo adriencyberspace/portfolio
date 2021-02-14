@@ -1,0 +1,161 @@
+/* -------------- CSS RESET --------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*----------------- MY CSS ----------------- */
+
+/* Left Side */
+#navbar {
+	width: 100vh;
+	display: flex;
+	align-items: flex-start;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	transform: rotate(-90deg) translateX(-99vh);
+	transform-origin: left top;
+	padding: 20px 20px 0 20px;
+	position: fixed;
+	z-index: 9999;
+}
+
+#navlinks {
+	display: flex;
+	flex-direction: row;
+	-webkit-box-pack: end;
+	justify-content: flex-end;
+	width: 49%;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#navlinks a {
+	padding: 0 10px 2px;
+	color: black;
+	text-decoration: none;
+}
+
+/* Right Side */
+#projbar {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+
+  position: fixed;
+  width: 100vh;
+  bottom: 0;
+  right: 2.3em;
+  transform: rotate(90deg);
+	transform-origin: 100% 100%;
+}
+
+#projlinks {
+	flex-direction: row;
+	-webkit-box-pack: start;
+	text-align: right;
+	padding-left: 25px;
+	padding-top: 10px;
+}
+
+#projlinks a {
+	padding: 0 10px 2px;
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px solid black;
+}
+
+h1 {
+	padding: 0 10px;
+}
+
+#centerdiv {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 10vh 0px;
+	min-height: 100vh;
+	max-height: 100vh;
+}
+
+#imagecaptiondiv {
+	width: 80%;
+	margin: auto;
+	min-height: 90vh;
+}
+
+#imagediv {
+	min-height: 60vh;
+	border: 1px dashed black;
+}
+
+#captiondiv {
+	text-align: center;
+	margin: 20px auto;
+	border: 1px dashed black;
+}
+
+body{
+	animation-name: bg_change;
+	animation-duration: 16s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;    
+	animation-play-state: running;
+}
+
+@keyframes bg_change{
+	0%{background: #eeffee;}
+	25%{background: rgb(255, 234, 248);}
+	50%{background: #f1fcff;}
+	75%{background: #fffef1;}
+	100%{background: #eeffee;}
+}
+
