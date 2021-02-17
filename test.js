@@ -1,9 +1,10 @@
 // Script to test my API
 
-const api_url = "https://adrienyoungcom-strapi-backend.herokuapp.com"
+const api_url = "https://adrienyoungcom-strapi-backend.herokuapp.com/projects"
+
 
 function fetchData() {
-  fetch(api_url + `/projects`).then(response => {
+  fetch(api_url).then(response => {
     if (!response.ok) {
       throw Error('ERROR');
     }
@@ -12,8 +13,8 @@ function fetchData() {
     const html = data.map(project => {
 
       return `<p>${project.title}</p>
-      <p>${api_url + project.primaryphoto.url}</p>
-      <img src="${api_url + project.primaryphoto.formats.medium.url}">`
+      <p>${project.primaryphoto.url}</p>
+      <img src="${project.primaryphoto.formats.medium.url}">`
       
     }).join('')
     document
