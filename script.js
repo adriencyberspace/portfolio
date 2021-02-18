@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  // Fetch data, by default
+  // By default, fetch data
   fetchData()
 
 });
@@ -15,41 +15,50 @@ function fetchData() {
       throw Error('ERROR');
     }
     return response.json()
-  }).then(projects => {
+  }).then(data => {
+
+    const projects = data.map(project => ({
+      id: project.id,
+      title: project.title,
+      image: project.primaryphoto.url
+    }));
+
     for (let project in projects) {
       
-      var current = projects[project];
+      const current = projects[project];
+      console.log(current.title);
+      console.log(current.image);
 
-      // Create links for each project in the #projbar then add to the #projlinks div
-      var project_navlink = document.createElement("a");
+      const project_navlink = document.createElement("a");
       project_navlink.setAttribute("id", "project" + current.id);
       project_navlink.setAttribute("href", '#');
       project_navlink.innerHTML =`${current.title}`;
-      
+
       document.querySelector("#projlinks").appendChild(project_navlink);
 
-      // TEST: Upon click, display the current title, not the last title. Not working.
-      project_navlink.onclick = () => alert(current.title);
+      // project_navlink.onclick = () => alert(current.title);
 
-      // Maybe try something like this answer: https://stackoverflow.com/questions/58341778/only-last-list-item-gets-rendered-in-react/58341944
 
       // Move onto this once I figure out above:
-      // document.querySelector(project_navlink).addEventListener('mouseover', () => {
-      //   let project_image = document.createElement("img");
-      //   project_image.setAttribute("src", current.primaryphoto.url);
-      //   project_image.setAttribute("class", "primaryphoto");
+      project_navlink.onclick = () => {
+        image_div = document.querySelector("#imagediv");
+        image_div.innerHTML = "";
+        let project_image = document.createElement("img");
+        project_image.setAttribute("src", current.image);
+        project_image.setAttribute("class", "primaryphoto");
 
-      //   document.querySelector("#imagediv").appendChild(project_image);
-      // });
-      
-      // document.querySelector(project_navlink).addEventListener('mouseover', () => document.querySelector("#imagediv").appendChild(project_image));
+        image_div.appendChild(project_image);
 
-    }
+        
+
+      };
+
+      }
 
   }).catch(error => {
     console.log(error)
   });
 }
 
-// fetchData();
+
 
