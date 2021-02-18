@@ -26,30 +26,33 @@ function fetchData() {
     for (let project in projects) {
       
       const current = projects[project];
-      console.log(current.title);
-      console.log(current.image);
 
+      // Create link in #projlinks div for each project title
       const project_navlink = document.createElement("a");
       project_navlink.setAttribute("id", "project" + current.id);
       project_navlink.setAttribute("href", '#');
       project_navlink.innerHTML =`${current.title}`;
-
       document.querySelector("#projlinks").appendChild(project_navlink);
 
-      // project_navlink.onclick = () => alert(current.title);
-
-
-      // Move onto this once I figure out above:
+      // Display project image upon clicking link
       project_navlink.onclick = () => {
+        displayImage()
+      };
+
+      // Display project image upon hovering over link
+      project_navlink.onmouseover = () => {
+        displayImage()
+      };
+
+      // Display project image
+      function displayImage() {
         image_div = document.querySelector("#imagediv");
         image_div.innerHTML = "";
         let project_image = document.createElement("img");
         project_image.setAttribute("src", current.image);
         project_image.setAttribute("class", "primaryphoto");
-
         image_div.appendChild(project_image);
-
-      };
+      }
 
       }
 
