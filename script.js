@@ -49,8 +49,6 @@ function fetchData() {
 
         image_div.appendChild(project_image);
 
-        
-
       };
 
       }
