@@ -1,15 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  // Use buttons to toggle between views
-  document.querySelector('#project1').addEventListener('onmouseover', () => load_mailbox('inbox'));
+  // Fetch data, by default
+  fetchData()
 
-
-  document.querySelector('#sent').addEventListener('click', () => load_mailbox('sent'));
-  document.querySelector('#archived').addEventListener('click', () => load_mailbox('archive'));
-  document.querySelector('#compose').addEventListener('click', compose_email);
-
-  // By default, load the inbox
-  load_mailbox('inbox');
 });
 
 const api_url = "https://adrienyoungcom-strapi-backend.herokuapp.com/projects"
@@ -25,22 +18,36 @@ function fetchData() {
   }).then(projects => {
     for (let project in projects) {
       
-      const current = projects[project];
-      console.log(current.title);
+      var current = projects[project];
 
-      const project_navlink = document.createElement("a");
-      project_navlink.setAttribute("id", current.id);
+      // Create links for each project in the #projbar then add to the #projlinks div
+      var project_navlink = document.createElement("a");
+      project_navlink.setAttribute("id", "project" + current.id);
       project_navlink.setAttribute("href", '#');
       project_navlink.innerHTML =`${current.title}`;
-
+      
       document.querySelector("#projlinks").appendChild(project_navlink);
-    
-    
+
+      // TEST: Upon click, display the current title, not the last title. Not working.
+      project_navlink.onclick = () => alert(current.title);
+
+      // Move onto this once I figure out above:
+      // document.querySelector(project_navlink).addEventListener('mouseover', () => {
+      //   let project_image = document.createElement("img");
+      //   project_image.setAttribute("src", current.primaryphoto.url);
+      //   project_image.setAttribute("class", "primaryphoto");
+
+      //   document.querySelector("#imagediv").appendChild(project_image);
+      // });
+      
+      // document.querySelector(project_navlink).addEventListener('mouseover', () => document.querySelector("#imagediv").appendChild(project_image));
+
     }
+
   }).catch(error => {
     console.log(error)
   });
 }
 
-fetchData();
+// fetchData();
 

@@ -120,7 +120,7 @@ h1 {
 }
 
 #centerdiv {
-	width: 80%;
+	width: 50%;
 	margin: 0 auto;
 	max-width: 1000px;
 	padding: 10vh 0px;
@@ -137,6 +137,10 @@ h1 {
 #imagediv {
 	min-height: 60vh;
 	border: 1px dashed black;
+}
+
+.primaryphoto {
+	max-width: 100%;
 }
 
 #captiondiv {
