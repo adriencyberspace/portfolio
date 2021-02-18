@@ -31,6 +31,8 @@ function fetchData() {
       // TEST: Upon click, display the current title, not the last title. Not working.
       project_navlink.onclick = () => alert(current.title);
 
+      // Maybe try something like this answer: https://stackoverflow.com/questions/58341778/only-last-list-item-gets-rendered-in-react/58341944
+
       // Move onto this once I figure out above:
       // document.querySelector(project_navlink).addEventListener('mouseover', () => {
       //   let project_image = document.createElement("img");
