@@ -5,9 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+// Global variable for API URL (to change once frontend is deployed and domain is linked)
 const api_url = "https://adrienyoungcom-strapi-backend.herokuapp.com/projects"
-
-console.log("Works");
 
 function fetchData() {
   fetch(api_url).then(response => {
@@ -17,6 +16,7 @@ function fetchData() {
     return response.json()
   }).then(data => {
 
+    // Map API to use in for...of loop below
     const projects = data.map(project => ({
       id: project.id,
       title: project.title,
@@ -53,8 +53,7 @@ function fetchData() {
         project_image.setAttribute("class", "primaryphoto");
         image_div.appendChild(project_image);
       }
-
-      }
+    }
 
   }).catch(error => {
     console.log(error)
