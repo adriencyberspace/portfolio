@@ -81,7 +81,6 @@ function fetchData() {
           let project_skills = document.createElement("li");
           project_skills.innerHTML = this_skill.name;
           info_div.appendChild(project_skills);
-
         }
       }
     }

@@ -129,24 +129,29 @@ h1 {
 }
 
 #contentflexdiv {
-	width: 80%;
-	margin: auto;
-	min-height: 90vh;
+	display: flex;
+	width: 90%;
+	margin: 15vh auto;
+	min-height: 30vh;
 }
 
+/* TODO: All image uploads must be the same dimensions. Figure that out then configure CSS to those dimensions. */
 #imagediv {
-	min-height: 60vh;
-	border: 1px dashed black;
+	width: 75%;
+	border: 1px solid black;
+	/* height: 100%; */
 }
+
 
 .primaryphoto {
 	max-width: 100%;
 }
 
 #infodiv {
-	text-align: center;
-	margin: 20px auto;
-	border: 1px dashed black;
+	width: 25%;
+	padding: 10px;
+	/* border: 1px dashed black; */
+	margin-left: 10px;
 }
 
 body{
