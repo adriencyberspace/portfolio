@@ -119,7 +119,7 @@ h1 {
 	padding: 0 10px;
 }
 
-#centerdiv {
+#centercontainer {
 	width: 60%;
 	margin: 0 auto;
 	max-width: 1000px;
@@ -128,8 +128,7 @@ h1 {
 	max-height: 100vh;
 }
 
-/* TODO: Change this div name */
-#imagecaptiondiv {
+#contentflexdiv {
 	width: 80%;
 	margin: auto;
 	min-height: 90vh;
