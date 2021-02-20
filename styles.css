@@ -111,7 +111,7 @@ table {
 
 }
 
-a:hover {
+#projlinks span:hover, #navlinks span:hover {
 	border-bottom: 1px solid black;
 }
 
@@ -120,7 +120,7 @@ h1 {
 }
 
 #centerdiv {
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
 	max-width: 1000px;
 	padding: 10vh 0px;
@@ -128,6 +128,7 @@ h1 {
 	max-height: 100vh;
 }
 
+/* TODO: Change this div name */
 #imagecaptiondiv {
 	width: 80%;
 	margin: auto;
@@ -143,7 +144,7 @@ h1 {
 	max-width: 100%;
 }
 
-#captiondiv {
+#infodiv {
 	text-align: center;
 	margin: 20px auto;
 	border: 1px dashed black;
