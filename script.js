@@ -69,7 +69,7 @@ function fetchData() {
         project_info.innerHTML = `
         <h3>${current.title}</h3>
         <p>${current.description}</p>
-        <a href="${current.link}">Link to Project</a>
+        <a target="_blank" href="${current.link}">Link to Project</a>
         `
         info_div.appendChild(project_info);
         
