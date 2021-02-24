@@ -67,21 +67,20 @@ function fetchData() {
         info_div.innerHTML = "";
         let project_info = document.createElement("div");
         project_info.innerHTML = `
-        <h3>${current.title}</h3>
         <p>${current.description}</p>
         <a target="_blank" href="${current.link}">Link to Project</a>
         `
         info_div.appendChild(project_info);
         
-        for (let skill in current.skills) {
-          const this_skill = current.skills[skill];
-          console.log(this_skill.name);
+        // for (let skill in current.skills) {
+        //   const this_skill = current.skills[skill];
+        //   console.log(this_skill.name);
 
-          skill_list = document.querySelector("#skillslist");
-          let project_skills = document.createElement("li");
-          project_skills.innerHTML = this_skill.name;
-          info_div.appendChild(project_skills);
-        }
+        //   skill_list = document.querySelector("#skillslist");
+        //   let project_skills = document.createElement("li");
+        //   project_skills.innerHTML = this_skill.name;
+        //   info_div.appendChild(project_skills);
+        // }
       }
     }
 
