@@ -51,8 +51,9 @@ table {
 /*----------------- MY CSS ----------------- */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
+  font-family: "Work Sans", Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
 }
 
 /* Left Side */
@@ -136,7 +137,7 @@ h1 {
   height: 66vh;
 }
 
-/* TODO: All image uploads must be the same dimensions. Figure that out then configure CSS to those dimensions. */
+/* NOTE: All image uploads need to be 4:3 ratio */
 #imagediv {
   width: 100%;
   height: 400px;
@@ -169,12 +170,11 @@ h1 {
   -webkit-transform:rotate(90deg);
   -webkit-transform-origin: 100% 100%;
   z-index: 100;
-  right: -20px; /*edited*/
-  top: 406px;
-  white-space: nowrap;
+  right: -20px;
+  bottom: 20px;
   display: flex;
-  width: 398px;
-  justify-content: space-evenly;
+  width: 400px;
+	justify-content: space-evenly;
 }
 
 #linkdiv {
@@ -203,9 +203,9 @@ h1 {
 
 #projectitle {
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 body{
