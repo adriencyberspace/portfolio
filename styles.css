@@ -112,8 +112,6 @@ body {
 	padding: 0 10px 2px;
 	color: black;
 	text-decoration: none;
-	text-transform: uppercase;
-
 }
 
 #projlinks span:hover, #navlinks span:hover {
@@ -158,7 +156,11 @@ h1 {
   height: 100%;
 }
 
-#testdiv {
+#infodiv {
+	text-align: center;
+}
+
+#skilldiv {
   position: absolute;
   transform: rotate(90deg);
   transform-origin:100% 100%;
@@ -173,6 +175,30 @@ h1 {
   display: flex;
   width: 398px;
   justify-content: space-evenly;
+}
+
+#linkdiv {
+	position: absolute;
+	transform: rotate(-90deg);
+	transform-origin: 0% 0%;
+	-ms-transform: rotate(-90deg); /* IE 9 */
+  -ms-transform-origin: 0% 0%; /* IE 9 */
+  -webkit-transform:rotate(-90deg);
+  -webkit-transform-origin: 0% 0%;
+	left: -57px;
+	bottom: -18px;
+	display: flex;
+	width: 400px;
+	justify-content: space-between;
+}
+
+#linkdiv a {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	border: 1px solid black;
+	width: 48%;
+	text-align: center;
 }
 
 #projectitle {

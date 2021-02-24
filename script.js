@@ -68,10 +68,11 @@ function fetchData() {
         let project_info = document.createElement("div");
         project_info.innerHTML = `
         <p>${current.description}</p>
-        <a target="_blank" href="${current.link}">Link to Project</a>
         `
         info_div.appendChild(project_info);
         
+        // <a target="_blank" href="${current.link}">Link to Project</a>
+
         // for (let skill in current.skills) {
         //   const this_skill = current.skills[skill];
         //   console.log(this_skill.name);
