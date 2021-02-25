@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Global variable for API URL (to change once frontend is deployed and domain is linked)
-const api_url = "https://adrienyoungcom-strapi-backend.herokuapp.com/projects"
+const api_url = "https://adrienyoungcom-strapi-backend.herokuapp.com/projects";
 
 function fetchData() {
   fetch(api_url).then(response => {
@@ -22,7 +22,8 @@ function fetchData() {
       title: project.title,
       description: project.description,
       link: project.link,
-      image: project.primaryphoto.formats.large.url,
+      githublink: project.githublink,
+      image: project.primaryphoto.url,
       skills: project.skills
 
     }));
@@ -49,7 +50,7 @@ function fetchData() {
         displayImage();
         displayInfo();
       };
-
+  
       // Display project image
       function displayImage() {
         image_div = document.querySelector("#imagediv");
@@ -63,25 +64,54 @@ function fetchData() {
 
       // Display project info
       function displayInfo() {
+        title_div = document.querySelector("#titlediv");
+        title_div.innerHTML = "";
+        let project_title = document.createElement("h1");
+        project_title.innerHTML = `${current.title}`;
+        title_div.appendChild(project_title);
+
+        // Display project description
         desc_div = document.querySelector("#descriptiondiv");
         desc_div.innerHTML = "";
         let project_desc = document.createElement("div");
-        project_desc.innerHTML = `
-        <p>${current.description}</p>
-        `
+        project_desc.innerHTML = `<p>${current.description}</p>`
         desc_div.appendChild(project_desc);
         
-        // <a target="_blank" href="${current.link}">Link to Project</a>
+        // Display project links
+        live_link = document.querySelector("#live-link");
+        live_link.href = `${current.link}`;
+        github_link = document.querySelector("#github-link");
+        github_link.href = `${current.githublink}`;
+        if (current.githublink == null) {
+          github_link.style.display = "none";
+          live_link.style.display = "block";
+          live_link.style.width = "100%";
+        } else if (current.link == null) {
+          live_link.style.display = "none";
+          github_link.style.display = "block";
+          github_link.style.width = "100%";
+        } else if (current.githublink == null && current.link == null) {
+          github_link.style.display = "none";
+          live_link.style.display = "none";
+        } else {
+          github_link.style.display = "block";
+          live_link.style.display = "block";
+          github_link.style.width = "48%";
+          live_link.style.width = "48%";
+        }
 
-        // for (let skill in current.skills) {
-        //   const this_skill = current.skills[skill];
-        //   console.log(this_skill.name);
 
-        //   skill_list = document.querySelector("#skillslist");
-        //   let project_skills = document.createElement("li");
-        //   project_skills.innerHTML = this_skill.name;
-        //   info_div.appendChild(project_skills);
-        // }
+
+
+        // Display project skills
+        skill_div = document.querySelector("#skilldiv");
+        skill_div.innerHTML = "";
+        for (let skill in current.skills) {
+          const this_skill = current.skills[skill];
+          let project_skills = document.createElement("span");
+          project_skills.innerHTML = this_skill.name;
+          skill_div.appendChild(project_skills);
+        }
       }
     }
 
