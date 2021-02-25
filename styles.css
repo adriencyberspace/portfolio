@@ -71,6 +71,10 @@ h1 {
 	font-weight: 500;
 }
 
+#live-link, #github-link {
+	display: none;
+}
+
 /*----------------- NAVIGATION ----------------- */
 
 @media only screen and (min-width: 581px) {
@@ -400,6 +404,7 @@ body {
 		align-items: flex-start;
 		-webkit-box-pack: justify;
 		justify-content: space-between;
+		font-weight: 500;
 	}
 	
 	#navlinks {
