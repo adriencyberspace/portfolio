@@ -70,12 +70,20 @@ function fetchData() {
         project_title.innerHTML = `${current.title}`;
         title_div.appendChild(project_title);
 
-        // Display project description
-        desc_div = document.querySelector("#descriptiondiv");
-        desc_div.innerHTML = "";
-        let project_desc = document.createElement("div");
-        project_desc.innerHTML = `<p>${current.description}</p>`
-        desc_div.appendChild(project_desc);
+        // Display project description (hacky but works)
+        // Need narrow and wide to keep rotated divs in place
+        let project_desc_wide = document.createElement("p");
+        project_desc_wide.innerHTML = `${current.description}`;
+        desc_div_wide = document.querySelector("#descriptiondivwide");
+        desc_div_wide.innerHTML = "";
+        desc_div_wide.appendChild(project_desc_wide);
+
+        let project_desc_narrow = document.createElement("p");
+        project_desc_narrow.innerHTML = `${current.description}`;
+        desc_div_narrow = document.querySelector("#descriptiondivnarrow");
+        desc_div_narrow.innerHTML = "";
+        desc_div_narrow.appendChild(project_desc_narrow);
+        
         
         // Display project links
         live_link = document.querySelector("#live-link");

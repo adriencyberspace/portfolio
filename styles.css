@@ -188,7 +188,11 @@ h1 {
 	text-align: center;
 }
 
-.descriptiondivnarrow {
+#descriptiondivwide {
+	display: block;
+}
+
+#descriptiondivnarrow {
 	display: none;
 }
 
@@ -329,7 +333,7 @@ body {
 	line-height: 1.2;
 }
 
-.descriptiondivwide {
+#descriptiondivwide {
 	display: none;
 }
 
