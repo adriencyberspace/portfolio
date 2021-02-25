@@ -63,13 +63,13 @@ function fetchData() {
 
       // Display project info
       function displayInfo() {
-        info_div = document.querySelector("#infodiv");
-        info_div.innerHTML = "";
-        let project_info = document.createElement("div");
-        project_info.innerHTML = `
+        desc_div = document.querySelector("#descriptiondiv");
+        desc_div.innerHTML = "";
+        let project_desc = document.createElement("div");
+        project_desc.innerHTML = `
         <p>${current.description}</p>
         `
-        info_div.appendChild(project_info);
+        desc_div.appendChild(project_desc);
         
         // <a target="_blank" href="${current.link}">Link to Project</a>
 

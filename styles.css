@@ -1,4 +1,4 @@
-/* -------------- CSS RESET --------------- */
+/* ---------------- CSS RESET ----------------- */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,7 +48,8 @@ table {
 	box-sizing: border-box;
 }
 
-/*----------------- MY CSS ----------------- */
+/*---------------//// MY CSS \\\\--------------- */
+
 
 body {
   font-family: "Work Sans", Helvetica, sans-serif;
@@ -56,7 +57,18 @@ body {
 	font-weight: 300;
 }
 
-/* Left Side */
+h1 {
+	padding: 0 10px;
+}
+
+/*----------------- NAVIGATION ----------------- */
+
+@media only screen and (min-width: 581px) {
+#work {
+	display: none;
+}
+
+	/* Left Side --------------- */
 #navbar {
 	width: 100vh;
 	display: flex;
@@ -81,13 +93,13 @@ body {
 	padding-right: 10px;
 }
 
-#navlinks a {
+#navlinks a, #navbar a {
 	padding: 0 10px 2px;
 	color: black;
 	text-decoration: none;
 }
 
-/* Right Side */
+/* Right Side --------------- */
 #projbar {
 	display: flex;
 	justify-content: space-between;
@@ -115,26 +127,28 @@ body {
 	text-decoration: none;
 }
 
-#projlinks span:hover, #navlinks span:hover {
+#projlinks span:hover, #navbar span:hover  {
 	border-bottom: 1px solid black;
 }
-
-h1 {
-	padding: 0 10px;
 }
 
-#centercontainer {
-	/* width: 600px; */
-	margin: 0 auto;
-  border: 1px dashed red;
-  height: 99vh;
-}
+/*------------------ CONTENT ------------------ */
 
-#contentdiv {
+@media only screen and (min-width: 901px) {
+/* Container for all Project Info */
+#contentcontainer {
   width: 600px;
   margin: 16vh auto;
-
   height: 66vh;
+}
+
+
+/* Project Image ------------- */
+#imagecontainer {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  display: inline-block;
 }
 
 /* NOTE: All image uploads need to be 4:3 ratio */
@@ -145,22 +159,26 @@ h1 {
   margin: 20px auto;
 }
 
-#imagecontainer {
-  width: 100%;
-  margin: auto;
-  position: relative;
-  display: inline-block;
-}
-
+/* Fill container */
 .primaryphoto {
   width: 100%;
   height: 100%;
 }
 
-#infodiv {
+/* Project Title  ------------ */
+#titlediv {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+	font-size: 40px;
+}
+
+/* Project Description -------- */
+#descriptiondiv {
 	text-align: center;
 }
 
+/* Project Skills ------------- */
 #skilldiv {
   position: absolute;
   transform: rotate(90deg);
@@ -171,12 +189,13 @@ h1 {
   -webkit-transform-origin: 100% 100%;
   z-index: 100;
   right: -20px;
-  bottom: 20px;
+  bottom: 38px;
   display: flex;
   width: 400px;
 	justify-content: space-evenly;
 }
 
+/* Project Links (90deg Left) --- */
 #linkdiv {
 	position: absolute;
 	transform: rotate(-90deg);
@@ -186,12 +205,13 @@ h1 {
   -webkit-transform:rotate(-90deg);
   -webkit-transform-origin: 0% 0%;
 	left: -57px;
-	bottom: -18px;
+	bottom: -2px;
 	display: flex;
 	width: 400px;
 	justify-content: space-between;
 }
 
+/* Link Buttons ----------------- */
 #linkdiv a {
 	text-decoration: none;
 	color: black;
@@ -201,26 +221,186 @@ h1 {
 	text-align: center;
 }
 
-#projectitle {
+}
+
+
+
+
+
+
+
+
+/*--------------- MEDIA QUERIES --------------- */
+
+/* TABLET AND SMALLER */
+@media only screen and (max-width: 900px) {
+
+body {
+	/* font-size: .85em; */
+}
+
+body {
+	background: pink;
+}
+
+	/* Container for all Project Info */
+#contentcontainer {
+  width: 66%;
+  margin: 16vh auto;
+	height: 66vh;
+	font-size: .85em;
+}
+
+
+/* Project Image ------------- */
+#imagecontainer {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  display: inline-block;
+}
+
+/* NOTE: All image uploads need to be 4:3 ratio */
+#imagediv {
+  width: 100%;
+  height: auto;
+	border: 1px solid black;
+  margin: 20px auto;
+}
+
+/* Fill container */
+.primaryphoto {
+  width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+/* Project Title  ------------ */
+#titlediv {
   text-align: center;
   font-weight: 700;
   letter-spacing: 2px;
-  font-size: 40px;
+	font-size: 34px;
 }
 
-body{
-	animation-name: bg_change;
-	animation-duration: 16s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;    
-	animation-play-state: running;
+/* Project Description -------- */
+#descriptiondiv {
+	margin: 0 auto 20px;
+	text-align: left;
+	line-height: 1.2;
 }
 
-@keyframes bg_change{
-	0%{background: #eeffee;}
-	25%{background: rgb(255, 234, 248);}
-	50%{background: #f1fcff;}
-	75%{background: #fffef1;}
-	100%{background: #eeffee;}
+/* Project Skills ------------- */
+#skilldiv {
+	margin: 20px auto;
+  display: flex;
+  width: 100%;
+	justify-content: flex-start;
 }
 
+#skilldiv span {
+	padding-right: 15px;
+}
+
+/* Project Links (90deg Left) --- */
+#linkdiv {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+
+/* Link Buttons ----------------- */
+#linkdiv a {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	border: 1px solid black;
+	width: 48%;
+	text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PHONE SIZE */
+@media only screen and (max-width: 580px) {
+	#about {
+		display: none;
+	}
+	
+	body {
+		background: rgb(188, 188, 248);
+	}
+
+  #navbar {
+		width: 90%;
+		margin: 20px auto;
+		padding: 0;
+		display: flex;
+		align-items: flex-start;
+		-webkit-box-pack: justify;
+		justify-content: space-between;
+	}
+	
+	#navlinks {
+		display: flex;
+		flex-direction: row;
+		-webkit-box-pack: end;
+		justify-content: flex-end;
+		width: 49%;
+		text-align: right;
+	}
+	
+	#navbar a {
+		color: black;
+		text-decoration: none;
+	}
+	
+	/* Right Side --------------- */
+	#projbar {
+		display: none;
+	}
+
+		/* Container for all Project Info */
+#contentcontainer {
+  width: 90%;
+  margin: 85px auto;
+  height: 66vh;
+}
+
+
+/* Project Image ------------- */
+#imagecontainer {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  display: inline-block;
+}
+
+/* NOTE: All image uploads need to be 4:3 ratio */
+#imagediv {
+  height: auto;
+}
+
+#descriptiondiv {
+	text-align: left;
+	line-height: 1.2;
+}
+
+
+
+
+
+
+
+
+}
