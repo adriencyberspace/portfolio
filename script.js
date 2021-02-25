@@ -85,15 +85,17 @@ function fetchData() {
         if (current.githublink == null) {
           github_link.style.display = "none";
           live_link.style.display = "block";
-          live_link.style.width = "100%";
+          live_link.style.margin = "auto";
         } else if (current.link == null) {
           live_link.style.display = "none";
           github_link.style.display = "block";
-          github_link.style.width = "100%";
+          github_link.style.margin = "auto";
         } else if (current.githublink == null && current.link == null) {
           github_link.style.display = "none";
           live_link.style.display = "none";
         } else {
+          live_link.style.margin = "0";
+          github_link.style.margin = "0";
           github_link.style.display = "block";
           live_link.style.display = "block";
           github_link.style.width = "48%";

@@ -55,10 +55,20 @@ body {
   font-family: "Work Sans", Helvetica, sans-serif;
 	text-transform: uppercase;
 	font-weight: 300;
+	letter-spacing: 1.5px;
+	background: #FF8645;
 }
 
 h1 {
 	padding: 0 10px;
+}
+
+.button:hover {
+	background: #4F9E67;
+}
+
+#projbar {
+	font-weight: 500;
 }
 
 /*----------------- NAVIGATION ----------------- */
@@ -122,7 +132,7 @@ h1 {
 }
 
 #projlinks a {
-	padding: 0 10px 2px;
+	padding: 0 15px 2px;
 	color: black;
 	text-decoration: none;
 }
@@ -155,14 +165,14 @@ h1 {
 #imagediv {
   width: 100%;
   height: 400px;
-	border: 1px solid black;
   margin: 20px auto;
 }
 
 /* Fill container */
 .primaryphoto {
   width: 100%;
-  height: 100%;
+	height: 100%;
+	/* border: 1px solid black; */
 }
 
 /* Project Title  ------------ */
@@ -174,8 +184,12 @@ h1 {
 }
 
 /* Project Description -------- */
-#descriptiondiv {
+.descriptiondiv {
 	text-align: center;
+}
+
+.descriptiondivnarrow {
+	display: none;
 }
 
 /* Project Skills ------------- */
@@ -189,7 +203,7 @@ h1 {
   -webkit-transform-origin: 100% 100%;
   z-index: 100;
   right: -20px;
-  bottom: 38px;
+  bottom: 20px;
   display: flex;
   width: 400px;
 	justify-content: space-evenly;
@@ -205,7 +219,7 @@ h1 {
   -webkit-transform:rotate(-90deg);
   -webkit-transform-origin: 0% 0%;
 	left: -57px;
-	bottom: -2px;
+	bottom: -18px;
 	display: flex;
 	width: 400px;
 	justify-content: space-between;
@@ -231,12 +245,41 @@ h1 {
 
 
 /*--------------- MEDIA QUERIES --------------- */
+@media only screen and (max-width: 1350px) {
+	body {
+		background: #FF8645;
+	}
+
+	.button:hover {
+		background: #4F9E67;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	body {
+		background: #4F9E67;
+	}
+
+	.button:hover {
+		background: #6e92f5;
+	}
+}
+
+
 
 /* TABLET AND SMALLER */
 @media only screen and (max-width: 900px) {
 
 body {
-	background: pink;
+	background: #6e92f5;
+}
+
+.button:hover {
+	background: #bcbcf8;
+}
+
+.button {
+	margin: 0!important;
 }
 
 	/* Container for all Project Info */
@@ -267,7 +310,7 @@ body {
 .primaryphoto {
   width: 100%;
 	height: 100%;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	padding: 0;
 }
 
@@ -280,10 +323,14 @@ body {
 }
 
 /* Project Description -------- */
-#descriptiondiv {
+.descriptiondiv {
 	margin: 0 auto 20px;
 	text-align: left;
 	line-height: 1.2;
+}
+
+.descriptiondivwide {
+	display: none;
 }
 
 /* Project Skills ------------- */
@@ -334,7 +381,11 @@ body {
 	}
 	
 	body {
-		background: rgb(188, 188, 248);
+		background: #bcbcf8;
+	}
+
+	.button:hover {
+		background: #FF8645;
 	}
 
   #navbar {
@@ -388,7 +439,7 @@ body {
   height: auto;
 }
 
-#descriptiondiv {
+.descriptiondiv {
 	text-align: left;
 	line-height: 1.2;
 }
