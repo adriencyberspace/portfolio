@@ -78,191 +78,177 @@ h1 {
 /*----------------- NAVIGATION ----------------- */
 
 @media only screen and (min-width: 581px) {
-#work {
-	display: none;
-}
+	#work {
+		display: none;
+	}
 
-	/* Left Side --------------- */
-#navbar {
-	width: 100vh;
-	display: flex;
-	align-items: flex-start;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
-	transform: rotate(-90deg) translateX(-99vh);
-	transform-origin: left top;
-	padding: 20px 20px 0 20px;
-	position: fixed;
-  z-index: 9999;
-  top: 0;
-}
+		/* Left Side --------------- */
+	#navbar {
+		width: 100vh;
+		display: flex;
+		align-items: flex-start;
+		-webkit-box-pack: justify;
+		justify-content: space-between;
+		transform: rotate(-90deg) translateX(-99vh);
+		transform-origin: left top;
+		padding: 20px 20px 0 20px;
+		position: fixed;
+		z-index: 9999;
+		top: 0;
+	}
 
-#navlinks {
-	display: flex;
-	flex-direction: row;
-	-webkit-box-pack: end;
-	justify-content: flex-end;
-	width: 49%;
-	text-align: right;
-	padding-right: 10px;
-}
+	#navlinks {
+		display: flex;
+		flex-direction: row;
+		-webkit-box-pack: end;
+		justify-content: flex-end;
+		width: 49%;
+		text-align: right;
+		padding-right: 10px;
+	}
 
-#navlinks a, #navbar a {
-	padding: 0 10px 2px;
-	color: black;
-	text-decoration: none;
-}
+	#navlinks a, #navbar a {
+		padding: 0 10px 2px;
+		color: black;
+		text-decoration: none;
+	}
 
-/* Right Side --------------- */
-#projbar {
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	padding: 0;
-  position: fixed;
-  width: 100vh;
-  bottom: 0;
-  right: 2.3em;
-  transform: rotate(90deg);
-	transform-origin: 100% 100%;
-}
+	/* Right Side --------------- */
+	#projbar {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		padding: 0;
+		position: fixed;
+		width: 100vh;
+		bottom: 0;
+		right: 2.3em;
+		transform: rotate(90deg);
+		transform-origin: 100% 100%;
+	}
 
-#projlinks {
-	flex-direction: row;
-	-webkit-box-pack: start;
-	text-align: right;
-	padding-left: 25px;
-	padding-top: 10px;
-}
+	#projlinks {
+		flex-direction: row;
+		-webkit-box-pack: start;
+		text-align: right;
+		padding-left: 25px;
+		padding-top: 10px;
+	}
 
-#projlinks a {
-	padding: 0 15px 2px;
-	color: black;
-	text-decoration: none;
-}
+	#projlinks a {
+		padding: 0 15px 2px;
+		color: black;
+		text-decoration: none;
+	}
 
-#projlinks span:hover, #navbar span:hover  {
-	border-bottom: 1px solid black;
-}
+	#projlinks span:hover, #navbar span:hover  {
+		border-bottom: 1px solid black;
+	}
 }
 
 /*------------------ CONTENT ------------------ */
 
 @media only screen and (min-width: 901px) {
-/* Container for all Project Info */
-#contentcontainer {
-  width: 600px;
-  margin: 16vh auto;
-  height: 66vh;
+	/* Container for all Project Info */
+	#contentcontainer {
+		width: 600px;
+		margin: 16vh auto;
+		height: 66vh;
+	}
+
+
+	/* Project Image ------------- */
+	#imagecontainer {
+		width: 100%;
+		margin: auto;
+		position: relative;
+		display: inline-block;
+	}
+
+	/* NOTE: All image uploads need to be 4:3 ratio */
+	#imagediv {
+		width: 100%;
+		height: 400px;
+		margin: 20px auto;
+	}
+
+	/* Fill container */
+	.primaryphoto {
+		width: 100%;
+		height: 100%;
+		/* border: 1px solid black; */
+	}
+
+	/* Project Title  ------------ */
+	#titlediv {
+		text-align: center;
+		font-weight: 700;
+		letter-spacing: 2px;
+		font-size: 40px;
+	}
+
+	/* Project Description -------- */
+	.descriptiondiv {
+		text-align: center;
+	}
+
+	#descriptiondivwide {
+		display: block;
+	}
+
+	#descriptiondivnarrow {
+		display: none;
+	}
+
+	/* Project Skills ------------- */
+	#skilldiv {
+		position: absolute;
+		transform: rotate(90deg);
+		transform-origin:100% 100%;
+		-ms-transform: rotate(90deg); /* IE 9 */
+		-ms-transform-origin:100% 100%; /* IE 9 */
+		-webkit-transform:rotate(90deg);
+		-webkit-transform-origin: 100% 100%;
+		z-index: 100;
+		right: -20px;
+		bottom: 20px;
+		display: flex;
+		width: 400px;
+		justify-content: space-evenly;
+	}
+
+	/* Project Links (90deg Left) --- */
+	#linkdiv {
+		position: absolute;
+		transform: rotate(-90deg);
+		transform-origin: 0% 0%;
+		-ms-transform: rotate(-90deg); /* IE 9 */
+		-ms-transform-origin: 0% 0%; /* IE 9 */
+		-webkit-transform:rotate(-90deg);
+		-webkit-transform-origin: 0% 0%;
+		left: -57px;
+		bottom: -18px;
+		display: flex;
+		width: 400px;
+		justify-content: space-between;
+	}
+
+	/* Link Buttons ----------------- */
+	#linkdiv a {
+		text-decoration: none;
+		color: black;
+		padding: 10px;
+		border: 1px solid black;
+		width: 48%;
+		text-align: center;
+	}
+
 }
-
-
-/* Project Image ------------- */
-#imagecontainer {
-  width: 100%;
-  margin: auto;
-  position: relative;
-  display: inline-block;
-}
-
-/* NOTE: All image uploads need to be 4:3 ratio */
-#imagediv {
-  width: 100%;
-  height: 400px;
-  margin: 20px auto;
-}
-
-/* Fill container */
-.primaryphoto {
-  width: 100%;
-	height: 100%;
-	/* border: 1px solid black; */
-}
-
-/* Project Title  ------------ */
-#titlediv {
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: 2px;
-	font-size: 40px;
-}
-
-/* Project Description -------- */
-.descriptiondiv {
-	text-align: center;
-}
-
-#descriptiondivwide {
-	display: block;
-}
-
-#descriptiondivnarrow {
-	display: none;
-}
-
-/* Project Skills ------------- */
-#skilldiv {
-  position: absolute;
-  transform: rotate(90deg);
-  transform-origin:100% 100%;
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -ms-transform-origin:100% 100%; /* IE 9 */
-  -webkit-transform:rotate(90deg);
-  -webkit-transform-origin: 100% 100%;
-  z-index: 100;
-  right: -20px;
-  bottom: 20px;
-  display: flex;
-  width: 400px;
-	justify-content: space-evenly;
-}
-
-/* Project Links (90deg Left) --- */
-#linkdiv {
-	position: absolute;
-	transform: rotate(-90deg);
-	transform-origin: 0% 0%;
-	-ms-transform: rotate(-90deg); /* IE 9 */
-  -ms-transform-origin: 0% 0%; /* IE 9 */
-  -webkit-transform:rotate(-90deg);
-  -webkit-transform-origin: 0% 0%;
-	left: -57px;
-	bottom: -18px;
-	display: flex;
-	width: 400px;
-	justify-content: space-between;
-}
-
-/* Link Buttons ----------------- */
-#linkdiv a {
-	text-decoration: none;
-	color: black;
-	padding: 10px;
-	border: 1px solid black;
-	width: 48%;
-	text-align: center;
-}
-
-}
-
-
-
-
 
 
 
 
 /*--------------- MEDIA QUERIES --------------- */
-@media only screen and (max-width: 1350px) {
-	body {
-		background: #FF8645;
-	}
-
-	.button:hover {
-		background: #4F9E67;
-	}
-}
-
 @media only screen and (max-width: 1150px) {
 	body {
 		background: #4F9E67;
