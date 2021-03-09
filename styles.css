@@ -82,6 +82,10 @@ h1 {
 		display: none;
 	}
 
+	#arrowbar {
+		display: none;
+	}
+
 		/* Left Side --------------- */
 	#navbar {
 		width: 100vh;
@@ -356,9 +360,12 @@ body {
 	width: 48%;
 	text-align: center;
 }
+
+#arrowbar {
+	display: none;
 }
 
-
+}
 
 
 /* PHONE SIZE */
@@ -406,11 +413,11 @@ body {
 	}
 
 		/* Container for all Project Info */
-#contentcontainer {
-  width: 85%;
-  margin: 85px auto;
-  height: 62vh;
-}
+	#contentcontainer {
+		width: 85%;
+		margin: 50px auto;
+		height: 62vh;
+	}
 
 
 /* Project Image ------------- */
@@ -434,9 +441,6 @@ body {
 
 
 
-}
-
-
 #arrowbar {
 	width: 80%;
 	justify-content: space-between;
@@ -452,3 +456,7 @@ body {
 #moreprojects {
 	align-self: center;
 }
+
+}
+
+
