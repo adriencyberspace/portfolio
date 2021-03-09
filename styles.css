@@ -64,7 +64,7 @@ h1 {
 }
 
 .button:hover {
-	background: #4F9E67;
+	background: #FFA05F;
 }
 
 #projbar {
@@ -416,15 +416,15 @@ body {
 		/* Container for all Project Info */
 	#contentcontainer {
 		width: 85%;
-		margin: 50px auto;
-		height: 58vh;
+		margin: 40px auto;
+		/* height: 80vh; */
 	}
 
 
 /* Project Image ------------- */
 #imagecontainer {
-  width: 100%;
-  margin: auto;
+  width: 90%;
+  margin: 0 5%;
   position: relative;
   display: inline-block;
 }
@@ -441,7 +441,7 @@ body {
 }
 
 #titlediv {
-	font-size: 28px;
+	font-size: 24px;
 }
 
 
