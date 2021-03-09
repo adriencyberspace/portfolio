@@ -416,7 +416,7 @@ body {
 #contentcontainer {
   width: 85%;
   margin: 85px auto;
-  height: 66vh;
+  height: 62vh;
 }
 
 
@@ -441,9 +441,21 @@ body {
 
 
 
+}
 
 
+#arrowbar {
+	width: 80%;
+	justify-content: space-between;
+	display: flex;
+	margin: 0 auto;
+}
 
+#leftarrow, #rightarrow {
+	font-size: 30px;
+	/* align-self: center; */
+}
 
-
+#moreprojects {
+	align-self: center;
 }
