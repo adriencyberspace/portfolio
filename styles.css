@@ -376,6 +376,7 @@ body {
 	
 	body {
 		background: #bcbcf8;
+		max-height: 100vh;
 	}
 
 	.button:hover {
@@ -416,7 +417,7 @@ body {
 	#contentcontainer {
 		width: 85%;
 		margin: 50px auto;
-		height: 62vh;
+		height: 58vh;
 	}
 
 
@@ -437,6 +438,10 @@ body {
 .descriptiondiv {
 	text-align: left;
 	line-height: 1.2;
+}
+
+#titlediv {
+	font-size: 28px;
 }
 
 
