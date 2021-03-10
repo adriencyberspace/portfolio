@@ -58,7 +58,8 @@ function fetchData() {
         let selfieURL = 'https://res.cloudinary.com/sk8rb0i/image/upload/v1615406161/metest_wdpvkt.png';
         document.querySelector('#titlediv').innerHTML = '';
         document.querySelector('#skilldiv').innerHTML = '';
-        document.querySelector('#linkdiv').innerHTML = '';
+        document.querySelector('#linkdiv').style.display = 'none';
+        document.querySelector('#homepagelinkdiv').style.display = 'flex';
         let selfDescription = `
         Hello! I'm Adrien Young, a rock n roll musician turned web developer. I built the frontend of this site with vanilla javascript and the backend with a headless cms. I'm interested in civic tech, art, music and 3d rendering. Let's work together.
         `;
@@ -93,12 +94,8 @@ function fetchData() {
           displayImage(projects[y].image);
           displayInfo(projects[y]);
         }
-        
       }
 
-      // function displayHomePage() {
-
-      // }
 
 
       // Display project image
@@ -136,6 +133,8 @@ function fetchData() {
         
         
         // Display project links
+        document.querySelector('#homepagelinkdiv').style.display = 'none';
+        document.querySelector('#linkdiv').style.display = 'flex';
         live_link = document.querySelector("#live-link");
         live_link.href = `${x.link}`;
         github_link = document.querySelector("#github-link");

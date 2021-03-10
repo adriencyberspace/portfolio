@@ -222,7 +222,7 @@ h1 {
 	}
 
 	/* Project Links (90deg Left) --- */
-	#linkdiv {
+	#linkdiv, #homepagelinkdiv {
 		position: absolute;
 		transform: rotate(-90deg);
 		transform-origin: 0% 0%;
@@ -238,7 +238,7 @@ h1 {
 	}
 
 	/* Link Buttons ----------------- */
-	#linkdiv a {
+	#linkdiv a, #homepagelinkdiv a {
 		text-decoration: none;
 		color: black;
 		padding: 10px;
@@ -344,7 +344,7 @@ body {
 }
 
 /* Project Links (90deg Left) --- */
-#linkdiv {
+#linkdiv, #homepagelinkdiv {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
@@ -352,7 +352,7 @@ body {
 }
 
 /* Link Buttons ----------------- */
-#linkdiv a {
+#linkdiv a, #homepagelinkdiv a {
 	text-decoration: none;
 	color: black;
 	padding: 10px;
@@ -447,7 +447,7 @@ body {
 	font-size: 24px;
 }
 
-#linkdiv {
+#linkdiv, #homepagelinkdiv {
 	margin: 15px 0;
 }
 
@@ -455,9 +455,9 @@ body {
 	margin: 15px 0;
 }
 
-#live-link {
+/* #live-link {
 	padding: 8px auto;
-}
+} */
 
 #arrowbar {
 	justify-content: space-between;
