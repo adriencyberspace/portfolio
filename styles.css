@@ -449,8 +449,13 @@ body {
 #arrowbar {
 	width: 100%;
 	justify-content: space-between;
-	display: flex;
+	display: none;
 	margin: 0 auto;
+}
+
+#arrowbar a {
+	text-decoration: none;
+	color: black;
 }
 
 #leftarrow, #rightarrow {
@@ -464,4 +469,9 @@ body {
 
 }
 
-
+/* Bigger than phone */
+@media only screen and (min-width: 580px) {
+	#arrowbar {
+		display: none!important;
+	}
+}
