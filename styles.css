@@ -460,7 +460,6 @@ body {
 }
 
 #arrowbar {
-	width: 95%;
 	justify-content: space-between;
 	display: none;
 	margin: 0 auto;

@@ -43,25 +43,37 @@ function fetchData() {
 
       // Display project image upon clicking link
       project_navlink.onclick = () => {
-        displayImage(current);
+        displayImage(current.image);
         displayInfo(current);
       };
 
       // Display project image upon hovering over link
       project_navlink.onmouseover = () => {
-        displayImage(current);
+        displayImage(current.image);
         displayInfo(current);
       };
 
       document.querySelector('#adrien').onclick = () => {
         document.querySelector('#arrowbar').style.display = 'none';
+        let selfieURL = 'https://res.cloudinary.com/sk8rb0i/image/upload/v1615406161/metest_wdpvkt.png';
+        document.querySelector('#titlediv').innerHTML = '';
+        document.querySelector('#skilldiv').innerHTML = '';
+        document.querySelector('#linkdiv').innerHTML = '';
+        let selfDescription = `
+        Hello! I'm Adrien Young, a rock n roll musician turned web developer. I built the frontend of this site with vanilla javascript and the backend with a headless cms. I'm interested in civic tech, art, music and 3d rendering. Let's work together.
+        `;
+        document.querySelector("#descriptiondivwide").innerHTML = selfDescription;
+        document.querySelector("#descriptiondivnarrow").innerHTML = selfDescription;
+        
+        document.querySelector("#descriptiondivnarrow");
+        displayImage(selfieURL);
       }
 
       // Mobile view - show first project upon clicking WORK, then navigate forward and backward with arrows
       document.querySelector('#work').onclick = () => {
         document.querySelector('#arrowbar').style.display = 'flex';
         let y = 0;
-        displayImage(projects[y]);
+        displayImage(projects[y].image);
         displayInfo(projects[y]);
         
         document.querySelector('#rightarrow').onclick = () => {
@@ -69,7 +81,7 @@ function fetchData() {
           if (y >= projects.length) {
             y = 0;
           } 
-          displayImage(projects[y]);
+          displayImage(projects[y].image);
           displayInfo(projects[y]);
         }
 
@@ -78,13 +90,15 @@ function fetchData() {
           if (y < 0) {
             y = projects.length - 1;
           } 
-          displayImage(projects[y]);
+          displayImage(projects[y].image);
           displayInfo(projects[y]);
         }
         
       }
 
+      // function displayHomePage() {
 
+      // }
 
 
       // Display project image
@@ -92,7 +106,7 @@ function fetchData() {
         image_div = document.querySelector("#imagediv");
         image_div.innerHTML = "";
         let project_image = document.createElement("img");
-        project_image.setAttribute("src", x.image);
+        project_image.setAttribute("src", x);
         project_image.setAttribute("class", "primaryphoto");
         image_div.appendChild(project_image);
         console.log()
