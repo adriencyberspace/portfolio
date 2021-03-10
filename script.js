@@ -53,7 +53,28 @@ function fetchData() {
         displayInfo(current);
       };
 
-      document.querySelector('#adrien').onclick = () => {
+      let adrien = document.querySelector('#adrien');
+      let about = document.querySelector('#about');
+
+      adrien.onclick = () => {
+        homePage()
+      }
+
+      adrien.onmouseover = () => {
+        homePage()
+      }
+
+      about.onclick = () => {
+        homePage()
+      }
+
+      about.onmouseover = () => {
+        homePage()
+      }
+
+  
+
+      function homePage() {
         document.querySelector('#arrowbar').style.display = 'none';
         let selfieURL = 'https://res.cloudinary.com/sk8rb0i/image/upload/v1615406161/metest_wdpvkt.png';
         document.querySelector('#titlediv').innerHTML = '';
