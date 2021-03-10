@@ -152,8 +152,8 @@ function fetchData() {
         // Display project skills
         skill_div = document.querySelector("#skilldiv");
         skill_div.innerHTML = "";
-        for (let skill in current.skills) {
-          const this_skill = current.skills[skill];
+        for (let skill in x.skills) {
+          const this_skill = x.skills[skill];
           let project_skills = document.createElement("span");
           project_skills.innerHTML = this_skill.name;
           skill_div.appendChild(project_skills);

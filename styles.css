@@ -416,15 +416,15 @@ body {
 		/* Container for all Project Info */
 	#contentcontainer {
 		width: 85%;
-		margin: 40px auto;
+		margin: 35px auto;
 		/* height: 80vh; */
 	}
 
 
 /* Project Image ------------- */
 #imagecontainer {
-  width: 100%;
-  margin: 0 auto;
+  width: 95%;
+  margin: 0 2.5%;
   position: relative;
   display: inline-block;
 }
@@ -432,25 +432,35 @@ body {
 /* NOTE: All image uploads need to be 4:3 ratio */
 /* Displays as 582*388px */
 #imagediv {
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
+	width: 100%;
   height: auto;
+	margin: 15px 0;
 }
 
 .descriptiondiv {
 	text-align: left;
 	line-height: 1.2;
+	margin: 15px 0;
 }
 
 #titlediv {
 	font-size: 24px;
 }
 
+#linkdiv {
+	margin: 15px 0;
+}
 
+#skilldiv {
+	margin: 15px 0;
+}
+
+#live-link {
+	padding: 8px auto;
+}
 
 #arrowbar {
-	width: 100%;
+	width: 95%;
 	justify-content: space-between;
 	display: none;
 	margin: 0 auto;
