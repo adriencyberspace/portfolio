@@ -423,8 +423,8 @@ body {
 
 /* Project Image ------------- */
 #imagecontainer {
-  width: 90%;
-  margin: 0 5%;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
   display: inline-block;
 }
@@ -432,6 +432,9 @@ body {
 /* NOTE: All image uploads need to be 4:3 ratio */
 /* Displays as 582*388px */
 #imagediv {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
   height: auto;
 }
 
