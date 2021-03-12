@@ -49,14 +49,38 @@ table {
 }
 
 /*---------------//// MY CSS \\\\--------------- */
-
+html {
+	height: 100vh;
+}
 
 body {
   font-family: "Work Sans", Helvetica, sans-serif;
 	text-transform: uppercase;
 	font-weight: 300;
 	letter-spacing: 1.5px;
+	background: white;
+	/* height: 100vh; */
+	/* border: 20px solid black; */
+	z-index: -1;
+}
+
+#color-square {
+	height: 75%;
+	width: 800px;
+	margin: 100px auto;
 	background: #FF8645;
+	
+	z-index: -2;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+#container {
+	z-index: 2;
 }
 
 h1 {
@@ -64,11 +88,14 @@ h1 {
 }
 
 .button:hover {
-	background: #FFA05F;
+	
+	background: rgba(255,255,255,0.2);
+	
 }
 
 #projbar {
 	font-weight: 500;
+	
 }
 
 #live-link, #github-link {
@@ -95,10 +122,12 @@ h1 {
 		justify-content: space-between;
 		transform: rotate(-90deg) translateX(-99vh);
 		transform-origin: left top;
-		padding: 20px 20px 0 20px;
+		padding: 15px;
+		margin-top: 8px;
 		position: fixed;
 		z-index: 9999;
 		top: 0;
+		/* border-bottom: 1px solid black; */
 	}
 
 	#navlinks {
@@ -113,6 +142,7 @@ h1 {
 
 	#navlinks a, #navbar a {
 		padding: 0 10px 2px;
+		font-weight: 500;
 		color: black;
 		text-decoration: none;
 	}
@@ -122,21 +152,22 @@ h1 {
 		display: flex;
 		justify-content: space-between;
 		list-style: none;
-		padding: 0;
+		padding: 15px;
 		position: fixed;
 		width: 100vh;
 		bottom: 0;
-		right: 2.3em;
+		/* right: 3em; */
+		right: 45px;
 		transform: rotate(90deg);
 		transform-origin: 100% 100%;
+		/* border-bottom: 1px solid black; */
 	}
 
 	#projlinks {
+		padding-left: 10px;
 		flex-direction: row;
 		-webkit-box-pack: start;
 		text-align: right;
-		padding-left: 25px;
-		padding-top: 10px;
 	}
 
 	#projlinks a {
@@ -375,13 +406,12 @@ body {
 	}
 	
 	body {
-		background: #bcbcf8;
 		max-height: 100vh;
 	}
 
-	.button:hover {
+	/* .button:hover {
 		background: #FF8645;
-	}
+	} */
 
   #navbar {
 		width: 85%;
