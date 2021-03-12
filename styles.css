@@ -50,6 +50,12 @@ table {
 
 /*---------------//// MY CSS \\\\--------------- */
 
+/* TODO: 
+	1. Make tablet view more like mobile view
+	2. Change mobile view padding/margins to fit newer iPhone screens
+	3. Make view just the viewport, no scrolling / overflow
+*/
+
 /* -------------Global---------------- */
 html {
 	height: 100vh;
@@ -209,7 +215,7 @@ h1 {
 
 */
 
-/* ---------- >TABLET ----------- */
+/* ---------- 1. >TABLET ----------- */
 
 @media only screen and (min-width: 581px) {
 
@@ -240,7 +246,7 @@ h1 {
 
 
 
-/* ------------- COMPUTER ------------- */
+/* ------------- 2. COMPUTER ------------- */
 
 @media only screen and (min-width: 901px) {
 
@@ -301,7 +307,7 @@ h1 {
 
 
 
-/* -------------- <TABLET ------------ */
+/* -------------- 3. <TABLET ------------ */
 
 @media only screen and (max-width: 900px) {
 
@@ -361,7 +367,7 @@ h1 {
 
 }
 
-/* ----------- MOBILE -------------- */
+/* ----------- 4. MOBILE -------------- */
 
 @media only screen and (max-width: 580px) {
 
@@ -450,9 +456,3 @@ h1 {
 	}
 
 }
-
-/* TODO: 
-	1. Make tablet view more like mobile view
-	2. Change mobile view padding/margins to fit newer iPhone screens
-	3. Make view just the viewport, no scrolling / overflow
-*/
