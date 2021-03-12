@@ -1,4 +1,4 @@
-/* ---------------- CSS RESET ----------------- */
+/* ------------//// CSS RESET \\\\------------- */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,7 +48,7 @@ table {
 	box-sizing: border-box;
 }
 
-/*---------------//// MY CSS \\\\--------------- */
+/*-------------- //// MY CSS \\\\ -------------- */
 
 /* TODO: 
 	1. Make tablet view more like mobile view
@@ -56,7 +56,8 @@ table {
 	3. Make view just the viewport, no scrolling / overflow
 */
 
-/* -------------Global---------------- */
+/*-------------- //// GLOBAL \\\\ ------------- */
+
 html {
 	height: 100vh;
 }
@@ -74,7 +75,6 @@ h1 {
 	padding: 0 10px;
 }
 
-
 #color-square {
 	height: 75%;
 	width: 800px;
@@ -89,14 +89,14 @@ h1 {
 	text-align: center;
 }
 
-
 .button:hover {
 	background: rgba(255,255,255,0.8);
 }
 
-/*----------------- NAVIGATION ----------------- */
 
-/* Main Navigation (Left Side) */
+/*------------- NAVIGATION ------------- */
+
+/* ---- Main Navigation (Left Side) ---- */
 #navbar {
 	display: flex;
 	align-items: flex-start;
@@ -115,7 +115,7 @@ h1 {
 	padding-right: 10px;
 }
 
-/* Project Navigation (Right Side) */
+/* ---- Project Navigation (Right Side) ---- */
 #projbar {
 	font-weight: 500;
 }
@@ -160,7 +160,7 @@ h1 {
 	text-decoration: none;
 }
 
-/*-------------- CONTENT --------------- */
+/*------------ CONTENT ------------- */
 
 #contentcontainer {
 	margin: 16vh auto;
@@ -207,12 +207,12 @@ h1 {
 
 
 /*------------- /// MEDIA QUERIES \\\ ------------- */
+
 /* 
 	1. Tablet and Greater (581px+)
 	2. Computer Sized (Greater Than Tablet) (901px+)
 	3. Smaller Than Tablet (Between Mobile and Tablet) (900px-)
 	4. Mobile-Only (580px-)
-
 */
 
 /* ---------- 1. >TABLET ----------- */
@@ -246,7 +246,7 @@ h1 {
 
 
 
-/* ------------- 2. COMPUTER ------------- */
+/* ------------ 2. COMPUTER ------------ */
 
 @media only screen and (min-width: 901px) {
 
@@ -307,7 +307,7 @@ h1 {
 
 
 
-/* -------------- 3. <TABLET ------------ */
+/* ------------ 3. <TABLET ------------ */
 
 @media only screen and (max-width: 900px) {
 
