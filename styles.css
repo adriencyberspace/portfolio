@@ -428,7 +428,7 @@ h1 {
 	}
 
   #navbar {
-		width: 85%;
+		width: 90%;
 		margin: 20px auto;
 		padding: 0;
 		display: flex;
@@ -459,9 +459,9 @@ h1 {
 
 		/* Container for all Project Info */
 	#contentcontainer {
-		width: 85%;
-		margin: 25px auto;
-		padding: 20px;
+		width: 90%;
+		margin: 20px auto;
+		padding: 20px 10px 10px;
 		/* height: 80vh; */
 	}
 
@@ -508,7 +508,7 @@ h1 {
 	justify-content: space-between;
 	display: none;
 	margin: 0 auto;
-	width: 81%;
+	width: 90%;
 }
 
 #arrowbar a {
