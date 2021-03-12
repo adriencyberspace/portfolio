@@ -309,61 +309,61 @@ h1 {
 
 /* ------------ 3. <TABLET ------------ */
 
-@media only screen and (max-width: 900px) {
+	@media only screen and (max-width: 900px) {
 
-.button {
-	margin: 0!important;
-}
+	.button {
+		margin: 0!important;
+	}
 
-#color-square {
-	height: 80%;
-	width: 80%;
-	margin: 80px auto;
-	display:none;
-}
+	#color-square {
+		height: 80%;
+		width: 80%;
+		margin: 80px auto;
+		display:none;
+	}
 
-#contentcontainer {
-  width: 70%;
-	font-size: .85em;
-	background: #FF8645;
-	padding: 20px 30px;
-}
+	#contentcontainer {
+		width: 70%;
+		font-size: .85em;
+		background: #FF8645;
+		padding: 20px 30px;
+	}
 
 
-#titlediv {
-	font-size: 34px;
-}
+	#titlediv {
+		font-size: 34px;
+	}
 
-.descriptiondiv {
-	margin: 0 auto 20px;
-	text-align: left;
-	line-height: 1.2;
-}
+	.descriptiondiv {
+		margin: 0 auto 20px;
+		text-align: left;
+		line-height: 1.2;
+	}
 
-#descriptiondivwide {
-	display: none;
-}
+	#descriptiondivwide {
+		display: none;
+	}
 
-#skilldiv {
-	margin: 20px auto;
-  display: flex;
-  width: 100%;
-	justify-content: flex-start;
-}
+	#skilldiv {
+		margin: 20px auto;
+		display: flex;
+		width: 100%;
+		justify-content: flex-start;
+	}
 
-#skilldiv span {
-	padding-right: 15px;
-}
+	#skilldiv span {
+		padding-right: 15px;
+	}
 
-#linkdiv, #homepagelinkdiv {
-	width: 100%;
-	justify-content: space-between;
-	margin: 20px auto;
-}
+	#linkdiv, #homepagelinkdiv {
+		width: 100%;
+		justify-content: space-between;
+		margin: 20px auto;
+	}
 
-#arrowbar {
-	display: none;
-}
+	#arrowbar {
+		display: none;
+	}
 
 }
 
