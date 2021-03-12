@@ -302,6 +302,10 @@ h1 {
 		justify-content: space-between;
 	}
 
+	#homepagelinkdiv {
+		bottom: -23px;
+	}
+
 }
 
 
@@ -372,6 +376,7 @@ h1 {
 @media only screen and (max-width: 580px) {
 
 	/* ---- Hide ---- */
+
 	#about, #projbar {
 		display: none;
 	}
