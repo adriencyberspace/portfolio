@@ -243,6 +243,7 @@ h1 {
 /* ------------- COMPUTER ------------- */
 
 @media only screen and (min-width: 901px) {
+
 	#contentcontainer {
 		width: 600px;
 		height: 60vh;
@@ -364,7 +365,8 @@ h1 {
 
 @media only screen and (max-width: 580px) {
 
-	#about {
+	/* ---- Hide ---- */
+	#about, #projbar {
 		display: none;
 	}
 
@@ -374,6 +376,8 @@ h1 {
 		margin: 50px auto;
 		display: none;
 	}
+
+	/* ---- Header Navigation ---- */
 
 	#navlinks {
 		padding: 0;
@@ -388,10 +392,8 @@ h1 {
 		color: black;
 		text-decoration: none;
 	}
-	
-	#projbar {
-		display: none;
-	}
+
+	/* ---- Project Content ---- */
 
 	#contentcontainer {
 		width: 90%;
@@ -425,9 +427,10 @@ h1 {
 		margin: 15px 0;
 	}
 
+	/* ---- Arrow Navigation ---- */
 	#arrowbar {
-		justify-content: space-between;
 		display: none;
+		justify-content: space-between;
 		margin: 0 auto;
 		width: 90%;
 	}
@@ -439,7 +442,6 @@ h1 {
 
 	#leftarrow, #rightarrow {
 		font-size: 30px;
-		/* align-self: center; */
 	}
 
 	#moreprojects {
@@ -449,3 +451,8 @@ h1 {
 
 }
 
+/* TODO: 
+	1. Make tablet view more like mobile view
+	2. Change mobile view padding/margins to fit newer iPhone screens
+	3. Make view just the viewport, no scrolling / overflow
+*/
