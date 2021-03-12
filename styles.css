@@ -284,7 +284,7 @@ h1 {
 
 
 /*--------------- MEDIA QUERIES --------------- */
-@media only screen and (max-width: 1150px) {
+/* @media only screen and (max-width: 1150px) {
 	body {
 		background: #4F9E67;
 	}
@@ -292,23 +292,29 @@ h1 {
 	.button:hover {
 		background: #6e92f5;
 	}
-}
+} */
 
 
 
 /* TABLET AND SMALLER */
 @media only screen and (max-width: 900px) {
 
-body {
+/* body {
 	background: #6e92f5;
 }
 
 .button:hover {
 	background: #bcbcf8;
-}
+} */
 
 .button {
 	margin: 0!important;
+}
+
+#color-square {
+	height: 80%;
+	width: 80%;
+	margin: 80px auto;
 }
 
 	/* Container for all Project Info */
@@ -401,6 +407,8 @@ body {
 
 /* PHONE SIZE */
 @media only screen and (max-width: 580px) {
+
+
 	#about {
 		display: none;
 	}
@@ -409,9 +417,11 @@ body {
 		max-height: 100vh;
 	}
 
-	/* .button:hover {
-		background: #FF8645;
-	} */
+	#color-square {
+		height: 85vh;
+		width: 90%;
+		margin: 60px auto;
+	}
 
   #navbar {
 		width: 85%;
