@@ -315,14 +315,17 @@ h1 {
 	height: 80%;
 	width: 80%;
 	margin: 80px auto;
+	display:none;
 }
 
 	/* Container for all Project Info */
 #contentcontainer {
-  width: 66%;
+  width: 70%;
   margin: 16vh auto;
-	height: 61vh;
+	/* height: 61vh; */
 	font-size: .85em;
+	background: #FF8645;
+	padding: 20px 30px;
 }
 
 
@@ -420,7 +423,8 @@ h1 {
 	#color-square {
 		height: 85vh;
 		width: 90%;
-		margin: 60px auto;
+		margin: 50px auto;
+		display: none;
 	}
 
   #navbar {
@@ -456,7 +460,8 @@ h1 {
 		/* Container for all Project Info */
 	#contentcontainer {
 		width: 85%;
-		margin: 35px auto;
+		margin: 25px auto;
+		padding: 20px;
 		/* height: 80vh; */
 	}
 
@@ -503,6 +508,7 @@ h1 {
 	justify-content: space-between;
 	display: none;
 	margin: 0 auto;
+	width: 81%;
 }
 
 #arrowbar a {
@@ -517,6 +523,7 @@ h1 {
 
 #moreprojects {
 	align-self: center;
+	font-size: .85em;
 }
 
 }
