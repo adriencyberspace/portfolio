@@ -213,6 +213,7 @@ h1 {
 	2. Computer Sized (Greater Than Tablet) (901px+)
 	3. Smaller Than Tablet (Between Mobile and Tablet) (900px-)
 	4. Mobile-Only (580px-)
+	5. Mobile-Only (Larger Screens) (Height: 800px+)
 */
 
 /* ---------- 1. >TABLET ----------- */
@@ -438,7 +439,7 @@ h1 {
 		margin: 15px 0;
 	}
 
-	/* ---- Arrow Navigation ---- */
+/* ---- Arrow Navigation ---- */
 	#arrowbar {
 		display: none;
 		justify-content: space-between;
@@ -458,6 +459,25 @@ h1 {
 	#moreprojects {
 		align-self: center;
 		font-size: .85em;
+	}
+
+}
+
+/* ----------- 5. MOBILE LONG ------------ */
+@media only screen and (min-height: 800px) {
+
+	#navbar {
+		margin-top: 30px;
+	}
+
+	#contentcontainer {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	#imagecontainer > div {
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 }
