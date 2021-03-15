@@ -76,7 +76,8 @@ h1 {
 }
 
 #contentcontainer {
-	background:#FF8645
+	background:#FF8645;
+	margin-top: min(40px);
 }
 
 .button:hover {
