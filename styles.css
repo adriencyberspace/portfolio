@@ -157,7 +157,6 @@ h1 {
 	width: 800px;
 	height: fit-content;
 	padding: 50px 0;
-	margin: calc((100vh - 612px)/2) auto;
 }
 
 #imagecontainer {
@@ -245,6 +244,10 @@ h1 {
 
 @media only screen and (min-width: 901px) {
 
+	#contentcontainer {
+		margin: max(min(40px), calc((100vh - 612px)/2)) auto;
+	}
+
 	#imagecontainer {
 		width: 600px;
 		margin: 0 12.5%;
@@ -310,7 +313,6 @@ h1 {
 
 
 
-
 /* ------------ 3. <TABLET ------------ */
 
 	@media only screen and (max-width: 900px) {
@@ -324,6 +326,7 @@ h1 {
 		font-size: .85em;
 		background: #FF8645;
 		padding: 20px 30px;
+		margin: 40px auto;
 	}
 
 
