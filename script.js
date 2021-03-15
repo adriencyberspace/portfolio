@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // let colors = ['#FF423B', '#FF8645', '#FDC53F', '#228A35', '#267DDE', '#8764B6']
 // function randomBackground() {
 //   let number = Math.round(Math.random() * (5));
-//   document.querySelector('#color-square').style.background = colors[number];
 //   document.querySelector('#contentcontainer').style.background = colors[number];
 // }
 // randomBackground();

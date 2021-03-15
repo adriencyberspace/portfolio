@@ -75,18 +75,8 @@ h1 {
 	padding: 0 10px;
 }
 
-#color-square {
-	height: 75%;
-	width: 800px;
-	margin: 100px auto;
-	background: #FF8645;
-	z-index: -2;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	text-align: center;
+#contentcontainer {
+	background:#FF8645
 }
 
 .button:hover {
@@ -136,6 +126,7 @@ h1 {
 #projlinks {
 	padding-left: 10px;
 	flex-direction: row;
+	flex-shrink: 0;
 	-webkit-box-pack: start;
 	text-align: right;
 }
@@ -163,7 +154,10 @@ h1 {
 /*------------ CONTENT ------------- */
 
 #contentcontainer {
-	margin: 16vh auto;
+	width: 800px;
+	height: fit-content;
+	padding: 50px 0;
+	margin: calc((100vh - 612px)/2) auto;
 }
 
 #imagecontainer {
@@ -251,12 +245,15 @@ h1 {
 
 @media only screen and (min-width: 901px) {
 
-	#contentcontainer {
+	#imagecontainer {
 		width: 600px;
-		height: 60vh;
+		margin: 0 12.5%;
+		position: relative;
+		display: inline-block;
 	}
 
 	#imagediv {
+		width: 600px;
 		height: 400px;
 	}
 
@@ -266,6 +263,8 @@ h1 {
 
 	#descriptiondivwide {
 		display: block;
+		width: 600px;
+		margin: 0 12.5%;
 	}
 
 	#descriptiondivnarrow {
@@ -320,13 +319,6 @@ h1 {
 		margin: 0!important;
 	}
 
-	#color-square {
-		height: 80%;
-		width: 80%;
-		margin: 80px auto;
-		display:none;
-	}
-
 	#contentcontainer {
 		width: 70%;
 		font-size: .85em;
@@ -379,13 +371,6 @@ h1 {
 	/* ---- Hide ---- */
 
 	#about, #projbar {
-		display: none;
-	}
-
-	#color-square {
-		height: 85vh;
-		width: 90%;
-		margin: 50px auto;
 		display: none;
 	}
 
