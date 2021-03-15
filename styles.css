@@ -466,17 +466,27 @@ h1 {
 /* ----------- 5. MOBILE LONG ------------ */
 @media only screen and (min-height: 800px) and (max-width: 580px) {
 
+	#contentcontainer {
+		padding-top: 10px;
+	}
 	#linkdiv {
 		display: none;
 	}
 
 	#imagediv {
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 0px;
 	}
 
-	#linkdiv {
-		margin: 0;
+	#descriptiondivnarrow, #linkdiv, #homepagelinkdiv, #skilldiv {
+		margin-top: 20px;
+	}
+
+	#descriptiondivnarrow, #linkdiv, #homepagelinkdiv, #titlediv, #imagediv  {
+		margin-bottom: 20px
+	}
+
+	#skilldiv, #titlediv {
+		margin-bottom: 10px;
 	}
 
 }
