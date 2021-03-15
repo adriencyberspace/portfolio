@@ -464,20 +464,19 @@ h1 {
 }
 
 /* ----------- 5. MOBILE LONG ------------ */
-@media only screen and (min-height: 800px) {
+@media only screen and (min-height: 800px) and (max-width: 580px) {
 
-	#navbar {
-		margin-top: 30px;
+	#linkdiv {
+		display: none;
 	}
 
-	#contentcontainer {
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-
-	#imagecontainer > div {
+	#imagediv {
 		margin-top: 20px;
 		margin-bottom: 20px;
+	}
+
+	#linkdiv {
+		margin: 0;
 	}
 
 }
