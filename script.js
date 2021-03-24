@@ -5,13 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-// let colors = ['#FF423B', '#FF8645', '#FDC53F', '#228A35', '#267DDE', '#8764B6']
-// function randomBackground() {
-//   let number = Math.round(Math.random() * (5));
-//   document.querySelector('#contentcontainer').style.background = colors[number];
-// }
-// randomBackground();
-
 // Global variable for API URL (to change once frontend is deployed and domain is linked)
 const api_url = "https://adrienyoungcom-strapi-backend.herokuapp.com/projects";
 
@@ -52,14 +45,12 @@ function fetchData() {
       project_navlink.onclick = () => {
         displayImage(current.image);
         displayInfo(current);
-        // randomBackground();
       };
 
       // Display project image upon hovering over link
       project_navlink.onmouseover = () => {
         displayImage(current.image);
         displayInfo(current);
-        // randomBackground();
       };
 
       let adrien = document.querySelector('#adrien');
@@ -67,25 +58,19 @@ function fetchData() {
 
       adrien.onclick = () => {
         homePage()
-        // randomBackground();
       }
 
       adrien.onmouseover = () => {
         homePage()
-        // randomBackground();
       }
 
       about.onclick = () => {
         homePage()
-        // randomBackground();
       }
 
       about.onmouseover = () => {
         homePage()
-        // randomBackground();
       }
-
-  
 
       function homePage() {
         document.querySelector('#arrowbar').style.display = 'none';
