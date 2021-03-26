@@ -441,6 +441,10 @@ h1 {
 		margin: 15px 0;
 	}
 
+	#descriptiondivnarrow p {
+		margin-bottom: 10px;
+	}
+
 	#titlediv {
 		font-size: 24px;
 	}

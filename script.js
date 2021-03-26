@@ -80,7 +80,7 @@ function fetchData() {
         document.querySelector('#linkdiv').style.display = 'none';
         document.querySelector('#homepagelinkdiv').style.display = 'flex';
         let selfDescription = `
-        Hello! I'm Adrien Young, a rock n roll musician turned web developer. I built the frontend of this site with vanilla javascript and the backend with a headless cms. I'm interested in civic tech, art, music and 3d rendering. Let's work together.
+        <p>Hello!</p> <p>I'm Adrien Young, a rock n roll musician turned web developer. I built the frontend of this site with vanilla javascript and the backend with a headless cms. I'm interested in civic tech, art, music and 3d rendering.</p> <p>Let's work together.</p>
         `;
         document.querySelector("#descriptiondivwide").innerHTML = selfDescription;
         document.querySelector("#descriptiondivnarrow").innerHTML = selfDescription;
