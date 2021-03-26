@@ -395,13 +395,14 @@ h1 {
 	html {
 		height: 100%;
 	}
-	
-	body {
+
+	body, #container {
 		height: 100%;
 		position: fixed;
 		top:0;
 		left:0;
 	}
+
 	/* ---- Header Navigation ---- */
 
 	#navlinks {
@@ -422,6 +423,7 @@ h1 {
 
 	#contentcontainer {
 		width: 90%;
+		min-height: 70%;
 		margin: 20px auto;
 		padding: 20px 10px 10px;
 	}
