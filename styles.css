@@ -479,7 +479,7 @@ h1 {
 
 /* ----------- 5. MOBILE LONG ------------ */
 /* TODO: Try making flex div, flex-direction: column */
-@media only screen and (min-height: 800px) and (max-width: 580px) {
+@media only screen and (min-height: 700px) and (max-width: 580px) {
 
 	#contentcontainer {
 		padding-top: 20px;
