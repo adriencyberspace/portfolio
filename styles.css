@@ -423,7 +423,7 @@ h1 {
 
 	#contentcontainer {
 		width: 90%;
-		min-height: 70%;
+		height: 66%;
 		margin: 20px auto;
 		padding: 20px 10px 10px;
 	}
@@ -483,10 +483,18 @@ h1 {
 @media only screen and (min-height: 800px) and (max-width: 580px) {
 
 	#contentcontainer {
-		padding-top: 10px;
+		padding-top: 20px;
 	}
 	#linkdiv {
 		display: none;
+	}
+
+	#navbar {
+		margin: 25px auto;
+	}
+
+	#contentcontainer {
+		margin: 25px auto;
 	}
 
 	#imagediv {
@@ -494,15 +502,15 @@ h1 {
 	}
 
 	#descriptiondivnarrow, #linkdiv, #homepagelinkdiv, #skilldiv {
-		margin-top: 20px;
+		margin-top: 25px;
 	}
 
 	#descriptiondivnarrow, #linkdiv, #homepagelinkdiv, #titlediv, #imagediv  {
-		margin-bottom: 20px
+		margin-bottom: 25px
 	}
 
 	#skilldiv, #titlediv {
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	}
 
 }
