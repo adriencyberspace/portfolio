@@ -226,7 +226,7 @@ h1 {
 
 /* ---------- 1. TABLET AND GREATER ----------- */
 
-@media only screen and (min-width: 581px) {
+@media only screen and (min-width: 701px) {
 
 	#work {
 		display: none;
@@ -384,7 +384,7 @@ h1 {
 
 /* ----------- 4. MOBILE -------------- */
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 700px) {
 
 	/* ---- Hide ---- */
 
@@ -398,7 +398,6 @@ h1 {
 
 	body, #container {
 		height: 100%;
-		position: fixed;
 		top:0;
 		left:0;
 	}
