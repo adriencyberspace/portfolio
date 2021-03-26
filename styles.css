@@ -423,7 +423,6 @@ h1 {
 
 	#contentcontainer {
 		width: 90%;
-		height: 66%;
 		margin: 20px auto;
 		padding: 20px 10px 10px;
 	}
@@ -495,6 +494,7 @@ h1 {
 
 	#contentcontainer {
 		margin: 25px auto;
+		/* height: 60%; */
 	}
 
 	#imagediv {
@@ -502,15 +502,15 @@ h1 {
 	}
 
 	#descriptiondivnarrow, #linkdiv, #homepagelinkdiv, #skilldiv {
-		margin-top: 25px;
+		margin-top: 30px;
 	}
 
 	#descriptiondivnarrow, #linkdiv, #homepagelinkdiv, #titlediv, #imagediv  {
-		margin-bottom: 25px
+		margin-bottom: 30px
 	}
 
 	#skilldiv, #titlediv {
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 
 }
