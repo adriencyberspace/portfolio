@@ -121,21 +121,20 @@ h1 {
 }
 
 /* ---- Project Navigation (Right Side) ---- */
-#projbar {
-	font-weight: 500;
-}
 
 #projbar {
 	display: flex;
 	justify-content: space-between;
-	list-style: none;
 	padding: 15px;
-	position: fixed;
 	width: 100vh;
+	list-style: none;
+	position: fixed;
 	bottom: 0;
 	right: 45px;
 	transform: rotate(90deg);
 	transform-origin: 100% 100%;
+	font-weight: 500;
+	overflow-x: scroll;
 }
 
 #projlinks {
