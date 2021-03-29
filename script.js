@@ -204,7 +204,7 @@ function fetchData() {
   function scrollHorizontally(e) {
       e = window.event || e;
       var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-      document.getElementById('projbar').scrollLeft -= (delta*40); // Multiplied by 40
+      document.getElementById('projbar').scrollLeft -= (delta*15); // Multiplied by 15
       e.preventDefault();
   }
   if (document.getElementById('projbar').addEventListener) {
