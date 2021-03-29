@@ -146,6 +146,7 @@ function fetchData() {
                 showPrev();
             }
         }
+      }
 
       // Display project image
       function displayImage(x) {
