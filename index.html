@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png"/>
-  <title>Adrien Young</title>
+  <title>adrienyoung.com</title>
 </head>
 <body>
   
@@ -59,44 +59,30 @@
 </body>
 <script src="script.js"></script>
 <script>
-  let touchstartX = 0;
-  let touchstartY = 0;
-  let touchendX = 0;
-  let touchendY = 0;
+//   let touchstartX = 0;
+//   let touchstartY = 0;
+//   let touchendX = 0;
+//   let touchendY = 0;
 
-const gestureZone = document.body;
+// const gestureZone = document.getElementById('contentcontainer');
 
-gestureZone.addEventListener('touchstart', function(event) {
-    touchstartX = event.changedTouches[0].screenX;
-    touchstartY = event.changedTouches[0].screenY;
-}, false);
+// gestureZone.addEventListener('touchstart', function(event) {
+//     touchstartX = event.changedTouches[0].screenX;
+// }, false);
 
-gestureZone.addEventListener('touchend', function(event) {
-    touchendX = event.changedTouches[0].screenX;
-    touchendY = event.changedTouches[0].screenY;
-    handleGesture();
-}, false); 
+// gestureZone.addEventListener('touchend', function(event) {
+//     touchendX = event.changedTouches[0].screenX;
+//     handleGesture();
+// }, false); 
 
-function handleGesture() {
-    if (touchendX < touchstartX) {
-        console.log('Swiped left');
-    }
+// function handleGesture() {
+//     if (touchendX < touchstartX) {
+//         console.log('Swiped left');
+//     }
     
-    if (touchendX > touchstartX) {
-        console.log('Swiped right');
-    }
-    
-    if (touchendY < touchstartY) {
-        console.log('Swiped up');
-    }
-    
-    if (touchendY > touchstartY) {
-       console.log('Swiped down');
-    }
-    
-    if (touchendY === touchstartY) {
-       console.log('Tap');
-    }
+//     if (touchendX > touchstartX) {
+//         console.log('Swiped right');
+//     }
 }
 </script>
 </html>

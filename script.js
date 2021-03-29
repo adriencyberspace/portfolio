@@ -28,8 +28,6 @@ function fetchData() {
 
     }));
 
-
-
     for (let project in projects) {
       
       const current = projects[project];
@@ -95,28 +93,59 @@ function fetchData() {
         let y = 0;
         displayImage(projects[y].image);
         displayInfo(projects[y]);
-        // randomBackground();
-        
-        document.querySelector('#rightarrow').onclick = () => {
+
+        function showNext() {
           y += 1;
           if (y >= projects.length) {
             y = 0;
           } 
           displayImage(projects[y].image);
           displayInfo(projects[y]);
-          // randomBackground();
         }
 
-        document.querySelector('#leftarrow').onclick = () => {
+        function showPrev() {
           y -= 1;
           if (y < 0) {
             y = projects.length - 1;
           } 
           displayImage(projects[y].image);
           displayInfo(projects[y]);
-          // randomBackground();
         }
-      }
+        
+        document.querySelector('#rightarrow').onclick = () => {
+          showNext();
+        }
+
+        document.querySelector('#leftarrow').onclick = () => {
+          showPrev();
+        }
+
+        // Begin swipe functionality:
+        let touchstartX = 0;
+        let touchendX = 0;
+
+        const gestureZone = document.getElementById('contentcontainer');
+
+        gestureZone.addEventListener('touchstart', function(event) {
+            touchstartX = event.changedTouches[0].screenX;
+        }, false);
+
+        gestureZone.addEventListener('touchend', function(event) {
+            touchendX = event.changedTouches[0].screenX;
+            handleGesture();
+        }, false); 
+
+        function handleGesture() {
+            if (touchendX < touchstartX) {
+                console.log('Swiped left');
+                showNext();
+            }
+            
+            if (touchendX > touchstartX) {
+                console.log('Swiped right');
+                showPrev();
+            }
+        }
 
       // Display project image
       function displayImage(x) {
