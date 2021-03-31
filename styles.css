@@ -60,6 +60,7 @@ html {
 }
 
 body {
+	min-height: 100vh;
   font-family: "Work Sans", Helvetica, sans-serif;
 	text-transform: uppercase;
 	font-weight: 300;
