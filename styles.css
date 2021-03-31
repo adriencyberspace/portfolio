@@ -51,11 +51,7 @@ table {
 
 /*-------------- //// MY CSS \\\\ -------------- */
 
-/* TODO: 
-	1. Make tablet view more like mobile view
-	2. Change mobile view padding/margins to fit newer iPhone screens
-	3. Make view just the viewport, no scrolling / overflow
-*/
+/* ~~~~~~~ Created by Adrien Young 2021 ~~~~~~~ */
 
 /*-------------- //// GLOBAL \\\\ ------------- */
 
@@ -390,13 +386,8 @@ h1 {
 /* ----------- 4. MOBILE -------------- */
 
 @media only screen and (max-width: 700px) {
-
-	/* ---- Hide ---- */
-
-	#about, #projbar {
-		display: none;
-	}
-
+	
+	/* Prevent inertial scrolling iOS */
 	html {
 		height: 100%;
 	}
@@ -407,6 +398,12 @@ h1 {
 		position: fixed;
 		top:0;
 		left: 0;
+	}
+
+	/* ---- Hide ---- */
+
+	#about, #projbar {
+		display: none;
 	}
 
 	/* ---- Header Navigation ---- */
@@ -484,7 +481,6 @@ h1 {
 }
 
 /* ----------- 5. MOBILE LONG ------------ */
-/* TODO: Try making flex div, flex-direction: column */
 @media only screen and (min-height: 700px) and (max-width: 700px) {
 
 	#contentcontainer {
