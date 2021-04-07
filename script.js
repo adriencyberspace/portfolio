@@ -72,7 +72,7 @@ function fetchData() {
 
       function homePage() {
         document.querySelector('#arrowbar').style.display = 'none';
-        let selfieURL = 'https://res.cloudinary.com/sk8rb0i/image/upload/v1615406161/metest_wdpvkt.png';
+        let selfieURL = 'https://res.cloudinary.com/sk8rb0i/image/upload/v1617760126/portfolio-me_gv6uwi.jpg';
         document.querySelector('#titlediv').innerHTML = '';
         document.querySelector('#skilldiv').innerHTML = '';
         document.querySelector('#linkdiv').style.display = 'none';
