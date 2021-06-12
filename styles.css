@@ -55,12 +55,26 @@ table {
 
 /*-------------- //// GLOBAL \\\\ ------------- */
 
+@font-face {
+  font-family: "graphik";
+  src: local("graphik"), url('./fonts/Graphik-Semibold.ttf') format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "graphik-light";
+  src: local("graphik-light"), url('./fonts/Graphik-Light.ttf') format("truetype");
+  font-weight: normal;
+}
+
+
+
 html {
 	height: 100vh;
 }
 
 body {
-  font-family: "Work Sans", Helvetica, sans-serif;
+  font-family: "graphik-light", Helvetica, sans-serif;
 	text-transform: uppercase;
 	font-weight: 300;
 	letter-spacing: 1.5px;
@@ -86,12 +100,13 @@ h1 {
 }
 
 #contentcontainer {
-	background:#FF8645;
+	/* background:#FF8645; */
 	margin-top: min(40px);
 }
 
 .button:hover {
-	background: rgba(255,255,255,0.8);
+	/* background: rgba(255,255,255,0.8); */
+	background: #FEFF32;
 }
 
 
@@ -99,6 +114,7 @@ h1 {
 
 /* ---- Main Navigation (Left Side) ---- */
 #navbar {
+	font-family: 'graphik', "Work Sans", Helvetica, Arial, sans-serif;
 	display: flex;
 	align-items: flex-start;
 	-webkit-box-pack: justify;
@@ -119,6 +135,7 @@ h1 {
 /* ---- Project Navigation (Right Side) ---- */
 
 #projbar {
+	font-family: 'graphik', "Work Sans", Helvetica, Arial, sans-serif;
 	display: flex;
 	justify-content: space-between;
 	padding: 15px 15px 15px 0px;
@@ -149,6 +166,10 @@ h1 {
 
 #projlinks span:hover, #navbar span:hover  {
 	border-bottom: 1px solid black;
+}
+
+#projbar:hover, #projlinks:hover, #projlinks span:hover {
+	cursor: ns-resize;
 }
 
 #live-link, #github-link {
@@ -192,8 +213,8 @@ h1 {
 }
 
 #titlediv {
-	font-family: 'Poppins', sans-serif;
-	font-size: 40px;
+	font-family: "TwCen", 'graphik', "Poppins", Helvetica, Arial, sans-serif;
+	font-size: 46px;
 	font-weight: 600;
 	letter-spacing: 2px;
 	text-align: center;
@@ -216,6 +237,9 @@ h1 {
 	text-transform: none;
 }
 
+#descriptiondivwide, #descriptiondivnarrow {
+	line-height: 1.5;
+}
 
 
 
@@ -345,14 +369,14 @@ h1 {
 	#contentcontainer {
 		width: 70%;
 		font-size: .85em;
-		background: #FF8645;
+		/* background: #FF8645; */
 		padding: 20px 30px;
 		margin: 40px auto;
 	}
 
 
 	#titlediv {
-		font-size: 34px;
+		font-size: 38px;
 	}
 
 	.descriptiondiv {
@@ -450,7 +474,7 @@ h1 {
 	}
 
 	#titlediv {
-		font-size: 24px;
+		font-size: 34px;
 	}
 
 	#linkdiv, #homepagelinkdiv {
